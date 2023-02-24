@@ -6,19 +6,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+	<link rel="stylesheet" href="./styles/style.css">
 	<title>JS - DATATYPES</title>
 </head>
 
-<body class="terminal">
+<body class="">
 
-	<H2>Datatypes in Javascript</H2>
-	<H4> Here you find the datatype that you can to use in Javascript </H4>
-
-	<ul class="d-flex">
-		<li>
-			<div class="terminal-card">
+	<h2 class="text-center">Tipos de datos en Javascript</h2>
+	
+	<ul class="d-flex flex-wrap justify-content-center gap-3">
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+	  <var class="reserved">const</var> <var class="variable">primer_bool</var> <var class="symbol">=</var> <var class="value">true</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">primer_bool</var>  // boolean
+	  <var class="reserved">const</var> <var class="variable">segundo_bool</var> <var class="symbol">=</var> <var class="value">false</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">segundo_bool</var>  // boolean
+</pre>
+				
 				<h6>
 					Boolean
 
@@ -27,68 +35,131 @@
 					<strong>Boolean</strong> es un tipo de dato logico con el que puedes solo los valores
 					<code>true</code> y <code>false</code>.
 				</p>
+
 			</div>
 		</li>
-		<li> 
-			<h6>
-				null
-			</h6>
-			<p>
-				Un valor <strong>null</strong> representa a la referencia a la que apunta.
-			</p>
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+
+	  <var class="reserved">const</var> <var class="variable">una_variable</var> <var class="symbol">=</var> <var class="value">null</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">una_variable</var>  // null
+
+</pre>
+				<h6 class="card-title">
+					null
+				</h6>
+				<p class="card-text">
+					Un valor <strong>null</strong> representa a la referencia a la que apunta.
+				</p>
+			</div>
 		</li>
-		<li> 
-			<h6>
-				undefined
-			</h6>
-			<p>
-				Valor que se le auto asigna a las variables acaban de ser declaradas.
-			</p>
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+
+	  <var class="reserved">const</var> <var class="variable">variable_indefinida</var> <var class="symbol">=</var> <var class="value">undefined</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">variable_indefinida</var>  // undefined
+
+</pre>
+				<h6 class="card-title">
+					undefined
+				</h6>
+				<p class="card-text">
+					Valor que se le auto asigna a las variables acaban de ser declaradas.
+				</p>
+			</div>
 		</li>
-		<li> 
-			<h6>
-				Number 
-			</h6>
-			<p>
-				Este tipo de dato es un numero decimal con precision de 64 bits.
-			</p>
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+
+	  <var class="reserved">const</var> <var class="variable">un_numero</var> <var class="symbol">=</var> <var class="value">420</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">un_numero</var>  // number
+
+</pre>
+				<h6 class="card-title">
+					Number
+				</h6>
+				<p class="card-text">
+					Este tipo de dato es un numero decimal con precision de 64 bits.
+				</p>
+			</div>
 		</li>
-		<li> 
-			<h6>
-				Bigint
-			</h6>
-			<p>
-				Este tipo de dato puede representar numeros en el <a href="https://es.wikipedia.org/wiki/Precisi%C3%B3n_arbitraria">formato de precision arbritaria</a>.
-			</p>
- 
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+
+	  <var class="reserved">const</var> <var class="variable">numero_gigante</var> <var class="symbol">=</var> <var class="value">31415629565n</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">numero_gigante</var>  // bigint
+
+</pre>
+				<h6 class="card-title">
+					Bigint
+				</h6>
+				<p class="card-text">
+					Este tipo de dato puede representar numeros en el <a
+						href="https://es.wikipedia.org/wiki/Precisi%C3%B3n_arbitraria">formato de precision
+						arbritaria</a>.
+				</p>
+			</div>
+
 		</li>
-		<li> 
-			<h6>
-				String 
-			</h6>
-			<p>
-				Un <strong>String</strong> es una secuencia de caracteres usada para representar un texto.
-			</p>
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+
+	  <var class="reserved">const</var> <var class="variable">string</var> <var class="symbol">=</var> <var class="value">'Hola mundo'</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">string</var>  // string
+
+</pre>
+				<h6 class="card-title">
+					String
+				</h6>
+				<p class="card-text">
+					Un <strong>String</strong> es una secuencia de caracteres usada para representar un texto.
+				</p>
+			</div>
 		</li>
-		<li> 
-			<h6>
-				Symbol 
-			</h6>
-			<p>
-				Este es un <code>build-in</code> cuyo constructor devuelve un simbolo primitivo que se garantiza ser unico.
-			</p>
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+
+	  <var class="reserved">const</var> <var class="variable">symbol</var> <var class="symbol">=</var> <var class="value">new Symbol()</var>; 
+	  <var class="reserved">typeof</var> <var class="variable">symbol</var>  // symbol
+
+</pre>
+				<h6 class="card-title">
+					Symbol
+				</h6>
+				<p class="card-text">
+					Este es un <code>build-in</code> cuyo constructor devuelve un simbolo primitivo que se garantiza ser
+					unico.
+				</p>
+			</div>
 		</li>
-		<li> 
-			<h6>
-				Object 
-			</h6>
-			<p>
-				Un <strong>Object</strong> puede ser una coleccion de propiedades.
-			</p>
+		<li class="card w-30">
+			<div class="card-body">
+				<pre class="editor-style">
+	  <var class="reserved">const</var> <var class="variable">un_objeto</var> <var class="symbol">=</var> <var class="value">new Object()</var>
+	  <var class="reserved">const</var> <var class="variable">otro_objeto</var> <var class="symbol">=</var> <var class="value">{}</var>; 
+	  
+	  <var class="reserved">typeof</var> <var class="variable">un_objeto</var>  // object
+	  <var class="reserved">typeof</var> <var class="variable">otro_objeto</var>  // object 
+</pre>
+				<h6 class="card-title">
+					Object
+				</h6>
+				<p class="card-text">
+					Un <strong>Object</strong> puede ser una coleccion de propiedades.
+				</p>
+			</div>
 		</li>
 	</ul>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
