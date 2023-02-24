@@ -1,19 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+*{
+    color: white;
+}
+body{
+    /* background-color: #011126; */
+}
 h2{
     margin-top: 2rem;
     margin-bottom: 3rem;
+    color: #011126;
+    font-family: 'Mynerve', cursive;
+    font-size: 30 rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
 }
 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 600;
 }
 a:hover{
     background-color: transparent;
-    color:black;
+    color:white;
     font-weight: 800;
 }
 ul{
     list-style: none;
+}
+.card{
+    background-color: #011126;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px #417FA622;
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+}
+.card::after{
+    content: none;
 }
 h6{
     text-align: center;
@@ -24,6 +50,7 @@ h6{
 }
 .editor-style{
     background-color: #101726;
+    border:none;
 }
 .reserved{
     color: aqua;
